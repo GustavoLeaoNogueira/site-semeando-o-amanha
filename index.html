@@ -1,0 +1,77 @@
+<!Doctype html>
+    <html lang="pt-br" ng-app="site">
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <!-- Facebook -->
+            <meta property="og:title" content="Escola de Ensino Infantil Semeando o Amanhã"/>   <meta property="og:description" content="Site oficial da Escola de Ensino Infantil Semeando o Amanhã"/> 
+            <meta property="og:url" content="http://semeando-o-amanha.esy.es"/>
+            <meta property="og:site_name" content="E.E.I. Semeando o Amanhã"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:image" content="img/icone.png"/>
+            <!-- Twitter -->
+            <meta name="twitter:title" content="Escola de Ensino Infantil Semeando o Amanhã"/>
+            <meta name="twitter:description" content="Site oficial da Escola de Ensino Infantil Semeando o Amanhã"/>
+            <meta name="twitter:card" content="sumary"/>
+            <meta name="twitter:site" content="@gustavoleaonog1"/>
+            
+            
+            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/estilo.css"/>
+            <link rel="icon" href="img/icone.png"/>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/escript.js"></script>
+            
+            <title>E.E.I. Semeando o Amanhã</title>
+        </head>
+        <body>
+            <br/>
+            <div class="container-fluid">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#/">Semeando o Amanhã</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#/">Início</a></li>
+                            <li><a href="#/metodos">Método de trabalho</a></li>
+                            <li><a href="#/objetivos">Fins e Objetivos</a></li>
+                            <li><a href="#/organizacao">Organização</a></li>
+                            <li><a href="#/contato">Contato</a></li>
+                        </ul>
+                    </div>  
+                </nav>
+            </div>
+            <br/>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1"></div>    
+                    <div class="col-sm-2">
+                        <img src="img/icone.png" class="img-thumbnail img-responsive"/>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <header class="jumbotron col-sm-6">
+                        <h2 class="text-center">Escola de Educação Infantil Semeando o Amanhã</h2>
+                    </header>  
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div ng-view></div>
+            </div>
+            <br/>
+            <div class="container-fluid">
+                <div class="col-sm-3"></div>
+                <footer class="col-sm-5">
+                    <img src="img/icone1.png" class="img-tumbnail img-responsive"/>
+                </footer>
+                <div class="col-sm-3"></div>
+            </div>
+        </body>
+    </html>
